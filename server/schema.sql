@@ -6,6 +6,7 @@ CREATE TABLE messages (
   id integer NOT NULL,
   message text,
   createdAt text,
+  roomname text,
   id_user INTEGER,
   PRIMARY KEY (id)
 );
