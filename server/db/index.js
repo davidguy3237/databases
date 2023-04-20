@@ -1,5 +1,7 @@
 var mysql = require('mysql2');
 
+//create a function that takes in paramters for a connection query
+
 // Create a database connection and export it from this file.
 // Confirm that the credentials supplied for the connection are correct.
 // On your personal computer supply the correct credentials for your mySQL account -- likely
@@ -7,4 +9,8 @@ var mysql = require('mysql2');
 // OR
 // user: 'root', password: 'some_password_you_created_at_install'
 
-
+module.exports = mysql.createConnection({
+  user: 'root',
+  password: '',
+  database: 'chat',
+});
